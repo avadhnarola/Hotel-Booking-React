@@ -1,0 +1,169 @@
+.main-header {
+    background: #fff;
+    transition: box-shadow 0.3s;
+    z-index: 1030;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logo a {
+    color: #000;
+    font-weight: bolder;
+}
+
+.logo a:hover {
+    color: #000;
+}
+
+.logo a:active {
+    color: #000;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #222 !important;
+    font-weight: 500;
+    margin: 0 0.7rem;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #d4a373 !important;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    border-bottom: 2px solid #d4a373;
+    padding-bottom: 2px;
+}
+
+.book-btn {
+    background: #d4a373;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+.book-btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.service-section {
+    background: #fff;
+}
+
+.service-subtitle {
+    color: #d4a373;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.service-desc {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.service-card {
+    background: #fff;
+    border: none;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 24px;
+    padding: 2.2rem 1.2rem 2rem 1.2rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+    height: 100%;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 32px rgba(212, 163, 115, 0.12);
+    transform: translateY(-8px) scale(1.03);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem auto;
+    background: #f3e6de;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #d4a373;
+    box-shadow: 0 2px 8px rgba(212, 163, 115, 0.08);
+    transition: background 0.2s, color 0.2s;
+}
+
+.service-card:hover .service-icon {
+    background: #d4a373;
+    color: #fff;
+}
+
+.service-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.18rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    color: #222;
+}
+
+.service-card-desc {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .service-title {
+        font-size: 2rem;
+    }
+    .service-card {
+        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+    }
+}
+
+i {
+    font-family: 'boxicons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

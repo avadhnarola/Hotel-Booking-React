@@ -1,0 +1,132 @@
+.hero-slider {
+  background: #f8f9fa;
+  min-height: 550px;
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.hero-slide {
+  display: none;
+  animation: fadeIn 1s;
+}
+.hero-slide.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.slider-content {
+  padding: 3rem 2rem 3rem 3rem;
+}
+
+.slider-subtitle {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: #bfae9c;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-left: 3px solid #d4a373;
+  padding-left: 1rem;
+}
+
+.slider-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.2rem;
+  line-height: 1.1;
+}
+
+.slider-desc {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-slider {
+  background: #d4a373;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.7rem 2.2rem;
+  font-weight: 600;
+  border: none;
+  transition: background 0.2s;
+}
+
+.btn-slider:hover {
+  background: #222;
+  color: #fff;
+}
+
+.slider-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0 0 40px 0;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+.slider-label {
+  position: absolute;
+  left: -21px;
+  bottom: 2rem;
+  background: #e9d8c3;
+  color: #444;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  writing-mode: vertical-rl;
+  text-align: center;
+  padding: 1.5rem 0.7rem;
+  border-radius: 10px;
+  opacity: 0.92;
+  letter-spacing: 2px;
+}
+
+.slider-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+  background: #d4a373;
+  opacity: 0.5;
+  transition: opacity 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.dot.active {
+  opacity: 1;
+  transform: scale(1.2);
+  background: #222;
+}
+
+@media (max-width: 991px) {
+  .slider-content {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .slider-img {
+    height: 250px;
+    border-radius: 0 0 20px 0;
+  }
+  .slider-label {
+    font-size: 1.3rem;
+    padding: 1rem 0.4rem;
+    bottom: 1rem;
+  }
+}
