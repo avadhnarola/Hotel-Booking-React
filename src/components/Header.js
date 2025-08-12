@@ -5,9 +5,10 @@ const Header = () => (
     <nav className="navbar navbar-expand-lg bg-white">
       <div className="container">
         <strong className="logo">
-          <a className="navbar-brand fw-bold fs-2" href="#">
+          <span className="navbar-brand fw-bold fs-2">
             Ecoland
-          </a></strong>
+          </span>
+        </strong>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,25 +23,39 @@ const Header = () => (
         <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" href="#">Home</a>
+              <span className="nav-link active">
+                Home
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Services</a>
+              <span className="nav-link">
+                Services
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <span className="nav-link">
+                About
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Destination</a>
+              <span className="nav-link">
+                Destination
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Hotel</a>
+              <span className="nav-link">
+                Hotel
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Restaurant</a>
+              <span className="nav-link">
+                Restaurant
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <span className="nav-link">
+                Contact
+              </span>
             </li>
           </ul>
         </div>
